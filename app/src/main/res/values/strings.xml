@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">My Application</string>
+    <string name="app_in_name" translatable="false">GuardLine</string>
+    <string name="app_name_after" translatable="false">Surveillance System</string>
+    <string name="bottom_text" translatable="false">Log in or Sign up</string>
+    <string name="Register_button" translatable="false">Sign up</string>
+    <string name="Login_button" translatable="false">Log in</string>
+    <string name="Choose_data" translatable="false">Choose data</string>
+    <string name="Temp1" translatable="false">Temperature in 1st room</string>
+    <string name="Temp2" translatable="false">Temperature in 2nd room</string>
+    <string name="Hum1" translatable="false">Humanity in 1st room</string>
+    <string name="Hum2" translatable="false">Humanity in 2nd room</string>
+    <string name="Sign_out" translatable="false">Sign Out</string>
+
+</resources>

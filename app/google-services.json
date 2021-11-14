@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "202875307798",
+    "firebase_url": "https://guardline-e9f9b-default-rtdb.firebaseio.com",
+    "project_id": "guardline-e9f9b",
+    "storage_bucket": "guardline-e9f9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202875307798:android:71e786f89c0001820df237",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202875307798-3g7t7dbhkhd3eagj7up6dbj1oj5jb3u6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "650c3a97554b92e4057a385ea496ffb009f244f3"
+          }
+        },
+        {
+          "client_id": "202875307798-uum8kc6rcm5onmlebpusvog6047keekj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJfbjV90wT2tyhv4xuc9FUoWzDkTlXW38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202875307798-uum8kc6rcm5onmlebpusvog6047keekj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
