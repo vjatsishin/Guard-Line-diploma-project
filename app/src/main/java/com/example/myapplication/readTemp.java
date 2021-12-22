@@ -24,6 +24,13 @@ public class readTemp extends AppCompatActivity {
     public DatabaseReference db;
     private String USER_KEY = "Users";
 
+   /*
+    public readTemp () {
+        this.listView = listView;
+        this.adapter = adapter;
+        this.listData = listData;
+    }*/
+
 @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +56,7 @@ public class readTemp extends AppCompatActivity {
                 for(DataSnapshot ds: dataSnapshot.getChildren()){
                     User user = ds.getValue(User.class);
                     assert user != null;
-                    listData.add(user.temperature);
+                    listData.add(user.getTemperature());
                 }
                 adapter.notifyDataSetChanged();
 

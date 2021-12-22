@@ -1,12 +1,13 @@
 package com.example.myapplication.Models;
 
+
 public class User {
-    public String fname;
-    public String sname;
-    public String password;
-    public String email;
-    public String phone;
-    public String temperature;
+    private String fname;
+    private String sname;
+    private String password;
+    private String email;
+    private String phone;
+    private String temperature;
 
     public User() {
 
