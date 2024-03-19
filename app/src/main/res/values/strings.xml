@@ -11,5 +11,6 @@
     <string name="Hum1" translatable="false">Humanity in 1st room</string>
     <string name="Hum2" translatable="false">Humanity in 2nd room</string>
     <string name="Sign_out" translatable="false">Sign Out</string>
+    <string name="CalculateConsumption" translatable="false"> Calculate Consumption</string>
 
 </resources>

@@ -49,7 +49,7 @@ public class readTemp2 extends AppCompatActivity {
                 for(DataSnapshot ds: dataSnapshot.getChildren()){
                     User user = ds.getValue(User.class);
                     assert user != null;
-                    listData1.add(user.temperature);
+                    listData1.add(user.getTemperature());
                 }
                 adapter1.notifyDataSetChanged();
 

@@ -20,7 +20,7 @@ import static android.view.View.*;
 
 public class SecondActivity extends AppCompatActivity {
 
-    Button btnTemp1, btnTemp2, btnHum1, btnHum2, btnSignout;
+    Button btnTemp1, btnTemp2, btnHum1, btnHum2, btnSignout, calculateConsumption;
     FirebaseDatabase db = FirebaseDatabase.getInstance();
     DatabaseReference T1 = db.getReference("Users");
 
@@ -36,6 +36,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        calculateConsumption = findViewById(R.id.calculateConsumption);
         btnTemp1 = findViewById(R.id.btnTemp1);
         btnTemp2 = findViewById(R.id.btnTemp2);
         btnHum1 = findViewById(R.id.btnHum1);
@@ -43,6 +44,14 @@ public class SecondActivity extends AppCompatActivity {
         btnSignout = findViewById(R.id.btnSignout);
         db= FirebaseDatabase.getInstance();
         T1 = db.getReference("Users");
+
+        calculateConsumption.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SecondActivity.this, CalculationActivity.class));
+
+            }
+        });
 
     }
 

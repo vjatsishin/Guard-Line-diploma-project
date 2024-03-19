@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="Choose your equipment"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:weightSum="0.9">
+
+            <CheckBox
+                android:id="@+id/ledBulb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LED Bulb">
+
+            </CheckBox>
+
+            <EditText
+                android:id="@+id/quantityLedBulb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity">
+
+            </EditText>
+
+            <Spinner
+                android:id="@+id/ledBulbPower"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="Power">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:weightSum="0.9">
+
+            <CheckBox
+                android:id="@+id/incandescentBulb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Incandescent Bulb">
+
+            </CheckBox>
+
+            <EditText
+                android:id="@+id/quantityIncandescentBulb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity">
+            </EditText>
+
+            <Spinner
+                android:id="@+id/incandescentBulbPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Power">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:weightSum="0.9">
+
+            <CheckBox
+                android:id="@+id/halogenBulb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Halogen Bulb">
+
+            </CheckBox>
+
+            <EditText
+                android:id="@+id/quantityHalogenBulb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity">
+
+            </EditText>
+
+            <Spinner
+                android:id="@+id/halogenBulbPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Power">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:weightSum="0.9">
+
+            <CheckBox
+                android:id="@+id/fluorescentBulb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fluorescent Bulb">
+
+            </CheckBox>
+
+            <EditText
+                android:id="@+id/quantityFluorescentBulb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quantity">
+
+            </EditText>
+
+            <Spinner
+                android:id="@+id/fluorescentBulbPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Power">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose date range for calculation"
+                android:textSize="20dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/dateRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="    Date range   ">
+
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/calendarBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_marginEnd="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/calendar">
+            </ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <Button
+                android:id="@+id/calculateConsumptionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="@string/CalculateConsumption">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/consumptionResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Result of Calculation">
+            </EditText>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

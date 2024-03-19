@@ -69,10 +69,21 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="20dp"
         android:orientation="vertical"
-        android:weightSum="4">
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/calculateConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_temp1"
+            android:text="@string/CalculateConsumption"
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/btnTemp1"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
@@ -80,7 +91,8 @@
             android:background="@drawable/btn_temp1"
             android:onClick="onClickTemp2"
             android:text="@string/Temp1"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            tools:ignore="OnClick" />
 
         <Button
             android:id="@+id/btnTemp2"

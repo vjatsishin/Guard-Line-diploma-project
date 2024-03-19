@@ -87,33 +87,35 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int which) {
 
-                if (TextUtils.isEmpty(email.getText().toString())){
+                startActivity(new Intent(MainActivity.this, SecondActivity.class));
 
-                    Snackbar.make(root, "input your email", Snackbar.LENGTH_SHORT).show();
-                    return;
-                }
-                if (password.getText().toString().length()<8){
-
-                    Snackbar.make(root, "input your password which more then 8 symbols", Snackbar.LENGTH_SHORT).show();
-                    return;
-                }
-
-                auth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
-                .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                    @Override
-                    public void onSuccess(AuthResult authResult) {
-
-                        startActivity(new Intent(MainActivity.this, SecondActivity.class));
-
-                    }
-                })
-
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Snackbar.make(root, "incorect authorization. " + e.getMessage(),Snackbar.LENGTH_LONG).show();
-                    }
-                });
+//                if (TextUtils.isEmpty(email.getText().toString())){
+//
+//                    Snackbar.make(root, "input your email", Snackbar.LENGTH_SHORT).show();
+//                    return;
+//                }
+//                if (password.getText().toString().length()<8){
+//
+//                    Snackbar.make(root, "input your password which more then 8 symbols", Snackbar.LENGTH_SHORT).show();
+//                    return;
+//                }
+//
+//                auth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
+//                .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+//                    @Override
+//                    public void onSuccess(AuthResult authResult) {
+//
+//                        startActivity(new Intent(MainActivity.this, SecondActivity.class));
+//
+//                    }
+//                })
+//
+//                .addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//                        Snackbar.make(root, "incorect authorization. " + e.getMessage(),Snackbar.LENGTH_LONG).show();
+//                    }
+//                });
 
 
 
